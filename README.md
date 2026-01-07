@@ -1,48 +1,39 @@
-﻿# Research_Paper_Summarizer
-Project Description (clean, professional, GitHub-ready)
+# Research Paper Summarizer 📄🤖
+![Uploading Gemini_Generated_Image_urls0gurls0gurls.png…]()
 
-Smart Research Summarization Tool is an AI-powered application designed to generate precise, high-quality summaries of academic papers, abstracts, and technical content. It uses Google’s Gemini 2.5 Flash model through LangChain to produce tailored summaries based on the user’s goals, such as general understanding, contextual insights, codebase-related explanation, business relevance, or research-grade condensation.
 
-The application provides a simple Streamlit interface where users can paste any research text and choose both the type and length of the desired summary. The system constructs a custom prompt using LangChain’s PromptTemplate, ensuring consistent structure, academic tone, and accurate preservation of technical terminology.
+Research Paper Summarizer is an AI-driven tool designed to help researchers, students, and academics quickly digest complex scientific papers. By leveraging Natural Language Processing (NLP), the application extracts and generates concise summaries, allowing users to understand the core contributions of a paper without reading dozens of pages.
 
-Behind the scenes, the model dynamically incorporates user-selected parameters (summary type and length) to adapt the summary for different use-cases — from short high-level overviews to longer, detail-oriented academic digests.
+## 🌟 Key Features
 
-To maintain best security practices, the project loads the Google API key from an external .env file and never exposes credentials in the code or repository.
+* **PDF Text Extraction**: Seamlessly parse and extract text from academic PDF files.
+* **AI-Powered Summarization**: Uses state-of-the-art NLP models (Hugging Face/Transformers) to generate coherent summaries.
+* **Section-Wise Analysis**: (Optional) Focus on specific sections like Introduction, Methodology, or Conclusion.
+* **Streamlined UI**: A clean, web-based interface for easy file uploading and result viewing.
+* **Time Saving**: Reduces the time spent on literature reviews by highlighting essential findings.
 
-Key Features
+---
 
-AI-generated summaries tailored by focus (General, Contextual, Codebase, Research, Business).
+## 🛠 Tech Stack
 
-Adjustable summary length (Short, Medium, Long).
+* **Language:** Python 3.8+
+* **NLP Models:** Hugging Face Transformers (BART/T5)
+* **Web Framework:** Streamlit / Flask
+* **Libraries:** * `PyMuPDF` or `PyPDF2` (PDF Processing)
+    * `torch` (Deep Learning Backend)
+    * `NLTK` / `Spacy` (Text Pre-processing)
 
-Uses Gemini 2.5 Flash through ChatGoogleGenerativeAI for fast, accurate responses.
+---
 
-Clean Streamlit UI for instant interaction.
+## 🚀 Getting Started
 
-Strong prompt engineering using LangChain’s PromptTemplate.
+### Prerequisites
+* Python installed on your local machine.
+* A stable internet connection (to download pre-trained models on first run).
 
-Secure environment variable handling via python-dotenv.
+### Installation
 
-How It Works
-
-User enters research text or abstract.
-
-User chooses the summarization type and length.
-
-LangChain constructs a custom prompt with enforced academic tone and structure.
-
-Gemini generates the final summary.
-
-Streamlit displays the result in an easy-to-read format.
-
-Typical Use Cases
-
-Students preparing paper reviews
-
-Researchers refining literature summaries
-
-Engineers summarizing technical documents
-
-Professionals extracting business implications from research
-
-Developers summarizing code-heavy papers
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/Rashid-Shocho/Research_Paper_Summarizer.git](https://github.com/Rashid-Shocho/Research_Paper_Summarizer.git)
+   cd Research_Paper_Summarizer
